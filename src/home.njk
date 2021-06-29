@@ -11,6 +11,6 @@ permalink: /
 
 <ul>
   {% for p in collections.all %}
-  <li><a href="{{ p.url | url }}">{{ p.url }} - {{ p.data.title }}</a>
+  <li><a href="{{ p.url | url }}">{{ p.data.title }}</a>
   {% endfor %}
 </ul>
