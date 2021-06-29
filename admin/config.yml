@@ -1,0 +1,7 @@
+# Netlify Auth
+backend:
+  name: git-gateway
+
+# Github Auth
+backend:
+  name: github
