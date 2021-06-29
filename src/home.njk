@@ -8,3 +8,9 @@ permalink: /
 
 <h2><code>page</code></h2>
 <pre>{{ page | to_json(null, 2) | safe }}</pre>
+
+<ul>
+  {% for p in collections.all %}
+  <li><a href="{{ p.url | url }}">{{ p.url }} - {{ p.data.title }}</a>
+  {% endfor %}
+</ul>
