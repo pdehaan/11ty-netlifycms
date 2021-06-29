@@ -3,6 +3,8 @@ module.exports = (eleventyConfig) => {
     JSON.stringify(value, null, indent)
   );
 
+  eleventyConfig.addPassthroughCopy("admin");
+
   return {
     dir: {
       input: "src",
